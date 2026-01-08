@@ -1,0 +1,45 @@
+# Ignore system files and directories
+AppData/
+.android/
+.trae/
+.trae-aicc/
+.cursor/
+.vscode/
+.claude/
+.claude.json
+.claude.json.backup
+.bash_history
+.node_repl_history
+.lesshst
+.gitconfig
+.git-for-windows-updater
+.m2/
+.ai_completion/
+3D Objects/
+Contacts/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Music/
+Saved Games/
+Searches/
+Tracing/
+Videos/
+NTUSER.DAT*
+OneDrive/
+Documents/
+*.exe
+*.zip
+*.pdf
+*.docx
+*.xlsx
+*.jpg
+*.jpeg
+*.png
+desktop.ini
+*.lnk
+
+# Keep project assets (override the above)
+!assets/
+!assets/*
