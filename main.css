@@ -11,6 +11,7 @@ html {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -22,6 +23,7 @@ html {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -33,6 +35,7 @@ html {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -56,36 +59,43 @@ html {
 .hero-banner {
     position: relative;
     overflow: hidden;
-    min-height: 60vh; /* Default for larger screens */
-    transform: translateZ(0); /* Enable hardware acceleration */
+    min-height: 60vh;
+    /* Default for larger screens */
+    transform: translateZ(0);
+    /* Enable hardware acceleration */
 }
 
 /* Responsive banner heights */
 @media (max-width: 768px) {
     .hero-banner {
-        min-height: 50vh; /* Shorter on tablets */
+        min-height: 50vh;
+        /* Shorter on tablets */
     }
 }
 
 @media (max-width: 640px) {
     .hero-banner {
-        min-height: 40vh; /* Even shorter on mobile */
+        min-height: 40vh;
+        /* Even shorter on mobile */
     }
 }
 
 /* Parallax background */
 .parallax-bg {
     position: absolute;
-    top: -5vh; /* Adjusted for responsive heights */
+    top: -5vh;
+    /* Adjusted for responsive heights */
     left: 0;
     width: 100%;
-    height: 70vh; /* Adjusted for responsive banner */
+    height: 70vh;
+    /* Adjusted for responsive banner */
     background-image: url('assets/all-printer.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    will-change: transform; /* Optimize for animations */
+    will-change: transform;
+    /* Optimize for animations */
     transform: translateZ(0) translateY(0);
 }
 
@@ -124,12 +134,14 @@ html {
 /* Responsive banner text */
 @media (max-width: 768px) {
     .hero-banner h1 {
-        font-size: 2.5rem !important; /* text-5xl equivalent */
+        font-size: 2.5rem !important;
+        /* text-5xl equivalent */
         line-height: 1.1;
     }
 
     .hero-banner p {
-        font-size: 1.25rem !important; /* text-xl equivalent */
+        font-size: 1.25rem !important;
+        /* text-xl equivalent */
         line-height: 1.4;
     }
 
@@ -141,12 +153,14 @@ html {
 
 @media (max-width: 640px) {
     .hero-banner h1 {
-        font-size: 2rem !important; /* text-4xl equivalent */
+        font-size: 2rem !important;
+        /* text-4xl equivalent */
         line-height: 1.1;
     }
 
     .hero-banner p {
-        font-size: 1.125rem !important; /* text-lg equivalent */
+        font-size: 1.125rem !important;
+        /* text-lg equivalent */
         line-height: 1.4;
     }
 
@@ -159,21 +173,25 @@ html {
 /* Contact page responsive text */
 @media (max-width: 768px) {
     .contact-hero h2 {
-        font-size: 2rem !important; /* Smaller on tablets */
+        font-size: 2rem !important;
+        /* Smaller on tablets */
     }
 
     .contact-hero p {
-        font-size: 1.125rem !important; /* Smaller paragraph */
+        font-size: 1.125rem !important;
+        /* Smaller paragraph */
     }
 }
 
 @media (max-width: 640px) {
     .contact-hero h2 {
-        font-size: 1.75rem !important; /* Even smaller on mobile */
+        font-size: 1.75rem !important;
+        /* Even smaller on mobile */
     }
 
     .contact-hero p {
-        font-size: 1rem !important; /* Smaller paragraph on mobile */
+        font-size: 1rem !important;
+        /* Smaller paragraph on mobile */
     }
 }
 
@@ -233,13 +251,15 @@ html {
 /* Parallax content container */
 .parallax-content {
     position: relative;
-    z-index: 2;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh; /* Match hero-banner height */
-    padding: 2rem 1rem; /* Responsive padding */
+    min-height: 60vh;
+    /* Match hero-banner height */
+    padding: 2rem 1rem;
+    /* Responsive padding */
 }
 
 /* Responsive parallax content */
@@ -275,7 +295,7 @@ html {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
     animation: pulse 4s ease-in-out infinite;
 }
 
@@ -360,14 +380,27 @@ html {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes zoomInOut {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .logo-zoom {
@@ -439,6 +472,7 @@ html {
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -498,262 +532,282 @@ textarea:focus {
 
 /* Page Loader Styles */
 #page-loader {
-  display: flex !important; /* Ensure loader is visible by default */
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
+    display: flex;
+    /* Ensure loader is visible by default */
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
 }
 
 /* Loader Styles */
 .loader-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  width: auto;
-  margin: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: auto;
+    margin: 2rem;
 
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6em;
-  font-weight: 600;
-  user-select: none;
-  color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    user-select: none;
+    color: #fff;
 
-  scale: 2.5;
+    scale: 2.5;
 }
 
 .loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 
-  background-color: transparent;
-  mask: repeating-linear-gradient(
-    90deg,
-    transparent 0,
-    transparent 6px,
-    black 7px,
-    black 8px
-  );
+    background-color: transparent;
+    mask: repeating-linear-gradient(90deg,
+            transparent 0,
+            transparent 6px,
+            black 7px,
+            black 8px);
 }
 
 .loader::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-  background-image: radial-gradient(circle at 50% 50%, #ff0 0%, transparent 50%),
-    radial-gradient(circle at 45% 45%, #f00 0%, transparent 45%),
-    radial-gradient(circle at 55% 55%, #0ff 0%, transparent 45%),
-    radial-gradient(circle at 45% 55%, #0f0 0%, transparent 45%),
-    radial-gradient(circle at 55% 45%, #00f 0%, transparent 45%);
-  mask: radial-gradient(
-    circle at 50% 50%,
-    transparent 0%,
-    transparent 10%,
-    black 25%
-  );
-  animation:
-    transform-animation 2s infinite alternate,
-    opacity-animation 4s infinite;
-  animation-timing-function: cubic-bezier(0.6, 0.8, 0.5, 1);
+    background-image: radial-gradient(circle at 50% 50%, #ff0 0%, transparent 50%),
+        radial-gradient(circle at 45% 45%, #f00 0%, transparent 45%),
+        radial-gradient(circle at 55% 55%, #0ff 0%, transparent 45%),
+        radial-gradient(circle at 45% 55%, #0f0 0%, transparent 45%),
+        radial-gradient(circle at 55% 45%, #00f 0%, transparent 45%);
+    mask: radial-gradient(circle at 50% 50%,
+            transparent 0%,
+            transparent 10%,
+            black 25%);
+    animation:
+        transform-animation 2s infinite alternate,
+        opacity-animation 4s infinite;
+    animation-timing-function: cubic-bezier(0.6, 0.8, 0.5, 1);
 }
 
 @keyframes transform-animation {
-  0% {
-    transform: translate(-55%);
-  }
-  100% {
-    transform: translate(55%);
-  }
+    0% {
+        transform: translate(-55%);
+    }
+
+    100% {
+        transform: translate(55%);
+    }
 }
 
 @keyframes opacity-animation {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 0;
-  }
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 0;
+    }
 }
 
 .loader-letter {
-  display: inline-block;
-  opacity: 0;
-  animation: loader-letter-anim 4s infinite linear;
-  z-index: 2;
+    display: inline-block;
+    opacity: 0;
+    animation: loader-letter-anim 4s infinite linear;
+    z-index: 2;
 }
 
 .loader-letter:nth-child(1) {
-  animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
+
 .loader-letter:nth-child(2) {
-  animation-delay: 0.205s;
+    animation-delay: 0.205s;
 }
+
 .loader-letter:nth-child(3) {
-  animation-delay: 0.31s;
+    animation-delay: 0.31s;
 }
+
 .loader-letter:nth-child(4) {
-  animation-delay: 0.415s;
+    animation-delay: 0.415s;
 }
+
 .loader-letter:nth-child(5) {
-  animation-delay: 0.521s;
+    animation-delay: 0.521s;
 }
+
 .loader-letter:nth-child(6) {
-  animation-delay: 0.626s;
+    animation-delay: 0.626s;
 }
+
 .loader-letter:nth-child(7) {
-  animation-delay: 0.731s;
+    animation-delay: 0.731s;
 }
+
 .loader-letter:nth-child(8) {
-  animation-delay: 0.837s;
+    animation-delay: 0.837s;
 }
+
 .loader-letter:nth-child(9) {
-  animation-delay: 0.942s;
+    animation-delay: 0.942s;
 }
+
 .loader-letter:nth-child(10) {
-  animation-delay: 1.047s;
+    animation-delay: 1.047s;
 }
 
 @keyframes loader-letter-anim {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-    text-shadow: 0 0 4px #fff;
-    transform: scale(1.1) translateY(-2px);
-  }
-  20% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        text-shadow: 0 0 4px #fff;
+        transform: scale(1.1) translateY(-2px);
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* From Uiverse.io by chase2k25 */
 .starfield-sparkle {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.9) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  filter: url(#starfield-texture);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 1) 100%);
+    filter: url(#starfield-texture);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
 }
 
 footer.island {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 /* From Uiverse.io by adamgiebl - Only for contact page social media cards */
 .card {
-  width: 190px;
-  height: 254px;
-  background: rgb(223, 225, 235);
-  border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 190px;
+    height: 254px;
+    background: rgb(223, 225, 235);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* Urgent Service Card - Applied only to "Need Urgent Printer Service?" section */
 .urgent-service-card {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  padding: 2rem;
-  border-radius: 30px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
-  margin: 0 auto;
-  text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Enhanced Call Now Buttons with Continuous Glowing */
 @keyframes pulseBlue {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4), 0 0 20px rgba(59, 130, 246, 0.2);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.4);
-    transform: scale(1.03);
-  }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4), 0 0 20px rgba(59, 130, 246, 0.2);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.4);
+        transform: scale(1.03);
+    }
 }
 
 @keyframes pulseGreen {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4), 0 0 20px rgba(34, 197, 94, 0.2);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.8), 0 0 40px rgba(34, 197, 94, 0.4);
-    transform: scale(1.03);
-  }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4), 0 0 20px rgba(34, 197, 94, 0.2);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.8), 0 0 40px rgba(34, 197, 94, 0.4);
+        transform: scale(1.03);
+    }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 .glow-button-blue {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%);
-  background-size: 200% 200%;
-  animation: pulseBlue 2s ease-in-out infinite, shimmer 3s ease-in-out infinite;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%);
+    background-size: 200% 200%;
+    animation: pulseBlue 2s ease-in-out infinite, shimmer 3s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .glow-button-green {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
-  background-size: 200% 200%;
-  animation: pulseGreen 2s ease-in-out infinite, shimmer 3s ease-in-out infinite;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+    background-size: 200% 200%;
+    animation: pulseGreen 2s ease-in-out infinite, shimmer 3s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
 }
 
-.glow-button-blue::before, .glow-button-green::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  animation: shimmer 2.5s infinite;
+.glow-button-blue::before,
+.glow-button-green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 2.5s infinite;
 }
 
 /* Logo Slider Animation */
@@ -785,6 +839,7 @@ footer.island {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
@@ -794,6 +849,7 @@ footer.island {
     from {
         transform: translateX(-50%);
     }
+
     to {
         transform: translateX(0);
     }

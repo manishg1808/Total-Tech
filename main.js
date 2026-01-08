@@ -110,8 +110,8 @@ function initializeMobileMenu() {
             // Animate hamburger icon
             const icon = mobileMenuButton.querySelector('i');
             if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
+                icon.classList.toggle('ri-menu-line');
+                icon.classList.toggle('ri-close-line');
             }
         });
 
@@ -122,8 +122,8 @@ function initializeMobileMenu() {
                 mobileMenu.classList.add('hidden');
                 const icon = mobileMenuButton.querySelector('i');
                 if (icon) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
+                    icon.classList.remove('ri-close-line');
+                    icon.classList.add('ri-menu-line');
                 }
             });
         });
