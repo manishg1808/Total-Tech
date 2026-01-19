@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TotalTech Printer Services</title>
+    <!-- Favicon - Multiple sizes for best display -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-white/10 backdrop-blur-md text-gray-800 py-1 md:py-2 border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+            <div class="flex justify-between items-center text-xs sm:text-sm">
+                <!-- Contact Info - Responsive -->
+                <div class="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
+                    <!-- Email - Always visible -->
+                    <div class="flex items-center">
+                        <i class="ri-mail-line text-orange-500 mr-1 sm:mr-2 text-sm"></i>
+                        <span class="text-gray-700">info@totaltech.com</span>
+                    </div>
+                    <!-- Animated Call Icon - Always visible -->
+                    <a href="tel:+14079462705" class="call-icon-animated">
+                        <i class="ri-phone-line text-orange-500 text-lg sm:text-xl"></i>
+                    </a>
+                    <!-- Phone - Hidden on mobile -->
+                    <div class="hidden md:flex items-center">
+                        <i class="ri-phone-line text-orange-500 mr-1 sm:mr-2 text-sm"></i>
+                        <span class="text-gray-700 font-medium">+1 407 946 2705</span>
+                    </div>
+                </div>
+
+                <!-- Social Media Links - Responsive -->
+                <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+                    <a href="https://facebook.com" target="_blank"
+                        class="text-gray-600 hover:text-orange-500 transition-colors p-1 hover:bg-orange-50 rounded">
+                        <i class="ri-facebook-line text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                        class="text-gray-600 hover:text-orange-500 transition-colors p-1 hover:bg-orange-50 rounded">
+                        <i class="ri-twitter-line text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        class="text-gray-600 hover:text-orange-500 transition-colors p-1 hover:bg-orange-50 rounded">
+                        <i class="ri-instagram-line text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank"
+                        class="text-gray-600 hover:text-orange-500 transition-colors p-1 hover:bg-orange-50 rounded">
+                        <i class="ri-linkedin-line text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://wa.me/14079462705"
+                        class="text-gray-600 hover:text-orange-500 transition-colors p-1 hover:bg-orange-50 rounded">
+                        <i class="ri-whatsapp-line text-sm sm:text-base"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/10 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex flex-col items-center">
+                        <img src="assets/logo.png" alt="TotalTech Logo" class="logo-zoom h-14 w-auto mb-1">
+                        <span
+                            class="text-sm font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">ASSIST</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-900 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                        <i class="ri-home-line mr-2 text-gray-900"></i>Home
+                    </a>
+                    <a href="services.html"
+                        class="text-gray-900 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                        <i class="ri-tools-line mr-2 text-gray-900"></i>Services
+                    </a>
+                    <a href="about.html"
+                        class="text-orange-500 border-b-2 border-orange-500 px-3 py-2 text-sm font-medium flex items-center">
+                        <i class="ri-information-line mr-2 text-orange-500"></i>About
+                    </a>
+                    <a href="contact.html"
+                        class="text-gray-900 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                        <i class="ri-phone-line mr-2 text-gray-900"></i>Contact
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-900 hover:text-orange-500 p-2">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/10 backdrop-blur-md border-t border-white/20">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html"
+                    class="text-gray-900 hover:text-orange-500 flex items-center px-3 py-2 text-base font-medium">
+                    <i class="ri-home-line mr-3 text-gray-900"></i>Home
+                </a>
+                <a href="services.html"
+                    class="text-gray-900 hover:text-orange-500 flex items-center px-3 py-2 text-base font-medium">
+                    <i class="ri-tools-line mr-3 text-gray-900"></i>Services
+                </a>
+                <a href="about.html" class="text-orange-500 flex items-center px-3 py-2 text-base font-medium">
+                    <i class="ri-information-line mr-3 text-orange-500"></i>About
+                </a>
+                <a href="contact.html"
+                    class="text-gray-900 hover:text-orange-500 flex items-center px-3 py-2 text-base font-medium">
+                    <i class="ri-phone-line mr-3 text-gray-900"></i>Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-parallax text-white relative overflow-hidden flex items-center justify-center"
+        style="background-image: url('assets/parllex.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    About Our Printer Services
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Your trusted partner for all printer services
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Story -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Our Story
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Founded with a passion for technology and a commitment to excellent service
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">From Humble Beginnings</h3>
+                        <p class="text-gray-600 mb-4">
+                            TotalTech started as a small family business in 2010 with a simple goal: to provide honest,
+                            reliable printer repair services when most companies were focused on selling new equipment.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            What began as a one-person operation has grown into a trusted name in printer services,
+                            serving hundreds of satisfied customers across the region.
+                        </p>
+                        <p class="text-gray-600">
+                            Today, we combine years of experience with the latest technology and techniques to provide
+                            comprehensive printer solutions for homes and businesses of all sizes.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 p-8 rounded-full inline-block">
+                            <i class="ri-history-line text-6xl text-blue-600"></i>
+                        </div>
+                        <p class="mt-4 text-gray-600">14+ Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Our Mission -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-600 p-3 rounded-full mr-4">
+                            <i class="ri-focus-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Mission</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our mission is to deliver fast, reliable, and cost-effective printer services while maintaining
+                        the highest standards of quality, transparency, and customer satisfaction.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            <span>Fast & Reliable Solutions</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            <span>Cost-Effective Services</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-green-500 mr-3"></i>
+                            <span>Quality & Transparency</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Vision -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-600 p-3 rounded-full mr-4">
+                            <i class="ri-eye-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        To become a trusted and preferred printer service provider by offering innovative,
+                        customer-focused, and technology-driven printing solutions.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-star-line text-purple-500 mr-3"></i>
+                            <span>Innovative Solutions</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-star-line text-purple-500 mr-3"></i>
+                            <span>Customer-Focused Approach</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-star-line text-purple-500 mr-3"></i>
+                            <span>Technology-Driven Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    What We Do
+                </h2>
+                <p class="text-lg text-gray-600">Our core expertise and comprehensive printer solutions</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 p-2 rounded-lg mr-3">
+                            <i class="ri-tools-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Printer Repair & Troubleshooting</h3>
+                    </div>
+                    <p class="text-gray-600">Expert diagnosis and repair of all printer types and brands</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-600 p-2 rounded-lg mr-3">
+                            <i class="ri-computer-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Software & Driver Issues</h3>
+                    </div>
+                    <p class="text-gray-600">Resolution of software conflicts and driver installation</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-600 p-2 rounded-lg mr-3">
+                            <i class="ri-settings-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Installation & Network Setup</h3>
+                    </div>
+                    <p class="text-gray-600">Professional installation and network configuration services</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-600 p-2 rounded-lg mr-3">
+                            <i class="ri-shield-check-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">AMC & Preventive Maintenance</h3>
+                    </div>
+                    <p class="text-gray-600">Annual maintenance contracts and preventive care programs</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-600 p-2 rounded-lg mr-3">
+                            <i class="ri-barcode-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Barcode & Thermal Printer Services</h3>
+                    </div>
+                    <p class="text-gray-600">Specialized services for industrial and POS printers</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-teal-600 p-2 rounded-lg mr-3">
+                            <i class="ri-exchange-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Genuine Spare Parts Replacement</h3>
+                    </div>
+                    <p class="text-gray-600">Authentic OEM parts replacement for optimal performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Why Choose Us
+                </h2>
+                <p class="text-xl text-slate-300">Reasons why thousands of customers trust TotalTech</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-user-star-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Experienced & Certified Technicians</h3>
+                    </div>
+                    <p class="text-slate-300">Our team consists of certified professionals with years of experience in
+                        printer repair and maintenance.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-medal-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Genuine & Quality Spare Parts</h3>
+                    </div>
+                    <p class="text-slate-300">We use only authentic, high-quality spare parts to ensure optimal
+                        performance and longevity.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-money-dollar-circle-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Transparent Pricing</h3>
+                    </div>
+                    <p class="text-slate-300">No hidden charges or surprise costs. Clear, upfront pricing for all our
+                        services.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-time-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Fast Response & Same-Day Service</h3>
+                    </div>
+                    <p class="text-slate-300">Quick response times with same-day service options to minimize your
+                        downtime.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-global-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Support for All Major Brands</h3>
+                    </div>
+                    <p class="text-slate-300">We service all major printer brands including HP, Canon, Epson, Brother,
+                        and more.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="ri-building-line text-3xl text-orange-400 mr-3"></i>
+                        <h3 class="text-xl font-bold">Dedicated Corporate Support</h3>
+                    </div>
+                    <p class="text-slate-300">Specialized support and priority service for corporate clients and
+                        enterprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Service Approach -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Our Service Approach
+                </h2>
+                <p class="text-lg text-gray-600">Our systematic process ensures reliable and professional service</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Understand Your Issue</h3>
+                    <p class="text-gray-600">We listen carefully to understand your printer problem and specific
+                        requirements.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Diagnose Problems</h3>
+                    <p class="text-gray-600">Comprehensive diagnosis of hardware and software issues affecting your
+                        printer.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Recommend Solution</h3>
+                    <p class="text-gray-600">We provide clear recommendations for the best solution based on our
+                        diagnosis.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Use Genuine Parts</h3>
+                    <p class="text-gray-600">We use only genuine spare parts and tested methods for reliable repairs.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">5</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Thorough Testing</h3>
+                    <p class="text-gray-600">Every repair undergoes rigorous testing before delivery to ensure quality.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">6</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Post-Service Support</h3>
+                    <p class="text-gray-600">We provide ongoing support and follow-up to ensure your complete
+                        satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software & Technology Expertise -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Software & Technology Expertise
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We handle printer software, driver installation, firmware updates, network configuration, and
+                        cloud/mobile printing solutions to ensure seamless compatibility with modern systems.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-2 rounded-lg mr-4 mt-1">
+                                <i class="ri-download-line text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Driver Installation & Updates</h3>
+                                <p class="text-gray-600">Latest drivers and firmware for optimal performance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-600 p-2 rounded-lg mr-4 mt-1">
+                                <i class="ri-wifi-line text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Network Configuration</h3>
+                                <p class="text-gray-600">Wireless and wired network setup for modern offices</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-600 p-2 rounded-lg mr-4 mt-1">
+                                <i class="ri-cloud-line text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Cloud & Mobile Printing</h3>
+                                <p class="text-gray-600">Integration with cloud services and mobile devices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-r from-blue-100 to-purple-100 p-8 rounded-xl">
+                        <i class="ri-computer-line text-6xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Modern Technology Solutions</h3>
+                        <p class="text-gray-600">Keeping your printing systems up-to-date with the latest technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Industries We Serve
+                </h2>
+                <p class="text-lg text-gray-600">Comprehensive printer solutions for all sectors</p>
+            </div>
+            <div class="grid grid-cols-6 gap-6">
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-home-line text-4xl text-blue-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Home Users</h3>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-building-line text-4xl text-green-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Offices & Corporates</h3>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-school-line text-4xl text-purple-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Schools & Colleges</h3>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-hospital-line text-4xl text-red-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Hospitals & Clinics</h3>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-shopping-bag-line text-4xl text-orange-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Retail & POS</h3>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="ri-truck-line text-4xl text-teal-600 mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Warehouses & Logistics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment to Quality & Customer Philosophy -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Commitment to Quality -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Commitment to Quality
+                    </h2>
+                    <p class="text-xl text-blue-100 mb-6">
+                        We believe in long-term performance, not temporary fixes. Our services focus on quality
+                        workmanship, reliable components, and customer satisfaction.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="ri-check-double-line text-green-400 mr-3"></i>
+                            <span>Quality workmanship guaranteed</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-check-double-line text-green-400 mr-3"></i>
+                            <span>Reliable, authentic components</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-check-double-line text-green-400 mr-3"></i>
+                            <span>Long-term performance focus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer-First Philosophy -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Customer-First Philosophy
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="ri-message-line text-orange-400 mr-3"></i>
+                                <span class="font-semibold">Clear Communication</span>
+                            </div>
+                            <p class="text-blue-100">Honest and transparent communication throughout the service process
+                            </p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="ri-thumb-up-line text-orange-400 mr-3"></i>
+                                <span class="font-semibold">Honest Recommendations</span>
+                            </div>
+                            <p class="text-blue-100">We recommend only what's necessary, never unnecessary repairs</p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="ri-time-line text-orange-400 mr-3"></i>
+                                <span class="font-semibold">On-Time Support</span>
+                            </div>
+                            <p class="text-blue-100">Reliable service delivery with respect for your time</p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="ri-refresh-line text-orange-400 mr-3"></i>
+                                <span class="font-semibold">Continuous Improvement</span>
+                            </div>
+                            <p class="text-blue-100">Always learning and improving our services for better customer
+                                experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Our Commitment
+                </h2>
+                <p class="text-lg text-gray-600">What you can always expect from TotalTech</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-flashlight-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fast Response Times</h3>
+                    <p class="text-gray-600">Quick diagnosis and repair services to minimize downtime</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-verified-badge-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Genuine Spare Parts</h3>
+                    <p class="text-gray-600">Only authentic, high-quality parts for reliable performance</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-user-star-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Skilled Technicians</h3>
+                    <p class="text-gray-600">Certified professionals with extensive experience</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-orange-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-refresh-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Improvement</h3>
+                    <p class="text-gray-600">Always updating our skills and technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    TotalTech by Numbers
+                </h2>
+                <p class="text-xl text-gray-200">Our commitment to excellence in action</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">5000+</div>
+                    <p class="text-gray-200">Printers Repaired</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">98%</div>
+                    <p class="text-gray-200">Customer Satisfaction</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+                    <p class="text-gray-200">Emergency Support</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">14+</div>
+                    <p class="text-gray-200">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call To Action -->
+    <section class="py-16 bg-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Call To Action -->
+            <div class="urgent-service-card">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+                    Looking for Reliable Printer Service?
+                </h3>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Don't let printer problems slow down your business
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openPhoneModal()"
+                        class="relative z-50 bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-400 transition-colors flex items-center justify-center cursor-pointer">
+                        <i class="ri-phone-line text-xl mr-2"></i>
+                        Call Now
+                    </button>
+                    <button onclick="openWhatsAppModal()"
+                        class="relative z-50 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center cursor-pointer">
+                        <i class="ri-whatsapp-line text-xl mr-2"></i>
+                        WhatsApp Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="island">
+        <svg height="0" width="0">
+            <filter id="octave1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="8" seed="4" result="o1">
+                </feTurbulence>
+                <feTurbulence type="fractalNoise" baseFrequency="0.004" numOctaves="8" seed="4" result="o2">
+                </feTurbulence>
+                <feTurbulence type="fractalNoise" baseFrequency="0.0005" numOctaves="8" seed="4" result="o3">
+                </feTurbulence>
+                <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="8" seed="4" result="o4">
+                </feTurbulence>
+
+                <feMerge result="finalIsland">
+                    <feMergeNode in="o1"></feMergeNode>
+                    <feMergeNode in="o3"></feMergeNode>
+                    <feMergeNode in="o1"></feMergeNode>
+                    <feMergeNode in="o3"></feMergeNode>
+                </feMerge>
+
+                <feGaussianBlur in="finalIsland" stdDeviation="5" result="noiseo"></feGaussianBlur>
+
+                <feTurbulence type="fractalNoise" baseFrequency="0.004" numOctaves="8" seed="4" result="o1">
+                </feTurbulence>
+                <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="8" seed="4" result="o2">
+                </feTurbulence>
+
+                <feMerge result="noiseo">
+                    <feMergeNode in="o2"></feMergeNode>
+                    <feMergeNode in="o4"></feMergeNode>
+                    <feMergeNode in="noiseo"></feMergeNode>
+                </feMerge>
+
+                <feGaussianBlur in="noiseo" stdDeviation="5" result="noiseo"></feGaussianBlur>
+
+                <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="8" seed="4" result="o1">
+                </feTurbulence>
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="8" seed="4" result="o2">
+                </feTurbulence>
+
+                <feMerge result="noiseo">
+                    <feMergeNode in="o1"></feMergeNode>
+                    <feMergeNode in="o1"></feMergeNode>
+                    <feMergeNode in="noiseo"></feMergeNode>
+                </feMerge>
+
+                <feGaussianBlur in="noiseo" stdDeviation="5" result="noiseo"></feGaussianBlur>
+
+                <feDiffuseLighting in="noiseo" surfaceScale="12" diffuseConstant="1" lighting-color="#11111"
+                    result="lit">
+                    <feDistantLight azimuth="0" elevation="1"></feDistantLight>
+                </feDiffuseLighting>
+
+                <feBlend in="lit" in2="SourceGraphic" mode="normal"></feBlend>
+            </filter>
+        </svg>
+    </div>
+    <footer class="island text-white py-12 relative">
+        <!-- From Uiverse.io by chase2k25 -->
+        <div class="starfield-sparkle pointer-events-none">
+            <span class="orbit-overlay"></span>
+            <svg class="texture-filter">
+                <filter id="starfield-texture">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="8" result="noise"></feTurbulence>
+                    <feGaussianBlur in="noise" stdDeviation="0.5" result="blur"></feGaussianBlur>
+                    <feSpecularLighting in="blur" surfaceScale="1.5" specularConstant="1" specularExponent="20"
+                        lighting-color="#ffffff" result="specular">
+                        <fePointLight z="100" y="50" x="50"></fePointLight>
+                    </feSpecularLighting>
+                    <feComposite in="specular" in2="SourceGraphic" operator="over" result="lit"></feComposite>
+                    <feBlend in="SourceGraphic" in2="lit" mode="hard-light"></feBlend>
+                </filter>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style="position: relative; z-index: 50;">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex flex-col items-center mb-4">
+                        <img src="assets/logo.png" alt="TotalTech Logo" class="logo-zoom h-14 w-auto mb-1">
+                        <span
+                            class="text-sm font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">ASSIST</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Fast, reliable and affordable printer solutions.
+                    </p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="https://facebook.com" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors"><i
+                                class="ri-facebook-fill text-xl"></i></a>
+                        <a href="https://twitter.com" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors"><i
+                                class="ri-twitter-x-fill text-xl"></i></a>
+                        <a href="https://instagram.com" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors"><i
+                                class="ri-instagram-fill text-xl"></i></a>
+                        <a href="https://linkedin.com" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors"><i
+                                class="ri-linkedin-fill text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Printer
+                                Repair</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Network
+                                Setup</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors">Maintenance</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors">Installation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Cartridge
+                                Refill</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Scanner
+                                Repair</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Software
+                                Issues</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="ri-phone-line mr-2"></i><a href="tel:+14079462705"
+                                class="hover:text-white transition-colors">+14079462705</a></li>
+                        <li><i class="ri-mail-line mr-2"></i><a href="mailto:info@totaltech.com"
+                                class="hover:text-white transition-colors">info@totaltech.com</a></li>
+                        <li><i class="ri-map-pin-line mr-2"></i><a
+                                href="https://www.google.com/maps/search/?api=1&query=Tech+zone+4,+Plot+No+-17,+Amrapali+Dream+Valley,+Greater+Noida,+Uttar+Pradesh+201318"
+                                target="_blank" class="hover:text-white transition-colors">
+                                Tech zone 4, Plot No - 17<br>
+                                Amrapali Dream Valley<br>
+                                Greater Noida, Uttar Pradesh 201318</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 TotalTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Phone Modal -->
+    <div id="phoneModal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-[100] flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative">
+            <button onclick="closePhoneModal()"
+                class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-2">
+                    <i class="ri-phone-line text-blue-600 text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">Choose a Number</h3>
+                <p class="text-gray-600 text-sm">Call our experts directly</p>
+            </div>
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="bg-blue-500 text-white p-2 rounded-lg mr-3"><i class="ri-phone-line"></i></div>
+                            <div>
+                                <p class="font-semibold text-gray-900">+1 (407) 946-2705</p>
+                                <p class="text-sm text-gray-600">Primary Support</p>
+                            </div>
+                        </div>
+                        <a href="tel:+14079462705"
+                            class="glow-button-blue text-white px-4 py-2 rounded-lg font-medium transition-colors">Call
+                            Now</a>
+                    </div>
+                    <div class="border-t border-gray-300"></div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="bg-green-500 text-white p-2 rounded-lg mr-3"><i class="ri-phone-line"></i></div>
+                            <div>
+                                <p class="font-semibold text-gray-900">+1 (407) 946-2706</p>
+                                <p class="text-sm text-gray-600">Emergency Support</p>
+                            </div>
+                        </div>
+                        <a href="tel:+14079462706"
+                            class="glow-button-green text-white px-4 py-2 rounded-lg font-medium transition-colors">Call
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-xs text-gray-500">Available Mon-Sat: 9AM-6PM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Modal -->
+    <div id="whatsappModal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full relative">
+            <button onclick="closeWhatsAppModal()"
+                class="absolute -top-3 -right-3 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg text-gray-400 hover:text-gray-600 text-xl border border-gray-200">&times;</button>
+            <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-t-2xl text-center">
+                <div class="inline-flex items-center justify-center w-10 h-10 rounded-full mb-1"><i
+                        class="ri-whatsapp-line text-white text-xl"></i></div>
+                <h3 class="font-bold">Quick WhatsApp Support</h3>
+            </div>
+            <form id="whatsappForm" class="p-5 space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                    <div><label class="block text-xs font-medium text-gray-600 mb-1">Name *</label><input type="text"
+                            id="waName" name="waName" required
+                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg"></div>
+                    <div><label class="block text-xs font-medium text-gray-600 mb-1">Mobile *</label><input type="tel"
+                            id="waMobile" name="waMobile" required
+                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1">Brand *</label>
+                        <select id="waPrinterBrand" name="waPrinterBrand" required
+                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg">
+                            <option value="">Select...</option>
+                            <option value="HP">HP</option>
+                            <option value="Canon">Canon</option>
+                            <option value="Epson">Epson</option>
+                            <option value="Brother">Brother</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1">Type *</label>
+                        <select id="waPrinterType" name="waPrinterType" required
+                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg">
+                            <option value="">Select...</option>
+                            <option value="Inkjet">Inkjet</option>
+                            <option value="Laser">Laser</option>
+                            <option value="Thermal">Thermal</option>
+                            <option value="Barcode">Barcode</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div><label class="block text-xs font-medium text-gray-600 mb-1">Issue Description *</label><textarea
+                        id="waIssue" name="waIssue" rows="2" required
+                        class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg resize-none"></textarea></div>
+                <div><label class="block text-xs font-medium text-gray-600 mb-1">Location (Optional)</label><input
+                        type="text" id="waLocation" name="waLocation"
+                        class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg"></div>
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-200">Start
+                    Chat</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SMS Modal -->
+    <div id="smsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full relative">
+            <button onclick="closeSMSModal()"
+                class="absolute -top-3 -right-3 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg text-gray-400 hover:text-gray-600 text-xl border border-gray-200">&times;</button>
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-t-2xl text-center">
+                <div class="text-2xl mb-1">💬</div>
+                <h3 class="font-bold">Send SMS Message</h3>
+            </div>
+            <div class="p-5">
+                <div class="mb-4">
+                    <label for="smsMessage" class="block text-sm font-medium text-gray-700 mb-2">Type your
+                        message:</label>
+                    <textarea id="smsMessage" rows="3"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none"
+                        placeholder="Enter your message here..." maxlength="160"></textarea>
+                    <div class="text-xs text-gray-500 mt-1 text-right"><span id="charCount">0</span>/160 characters
+                    </div>
+                </div>
+                <button id="smsSubmitBtn" type="button" disabled onclick="sendSMS()"
+                    class="w-full bg-gray-300 text-gray-500 py-2.5 px-4 rounded-lg font-semibold cursor-not-allowed">Send
+                    SMS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SMS Display Modal -->
+    <div id="smsDisplayModal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-sm w-full relative">
+            <button onclick="closeSMSDisplayModal()"
+                class="absolute -top-3 -right-3 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg text-gray-400 hover:text-gray-600 text-xl border border-gray-200">&times;</button>
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-t-2xl text-center">
+                <div class="inline-flex items-center justify-center w-8 h-8 rounded-full mb-1"><i
+                        class="ri-check-double-line text-white text-sm"></i></div>
+                <h3 class="font-bold text-sm">SMS Sent Successfully!</h3>
+            </div>
+            <div class="p-4">
+                <div class="bg-gray-100 rounded-lg p-4 border-l-4 border-blue-500">
+                    <div class="flex items-start space-x-3">
+                        <div
+                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold flex-shrink-0">
+                            <i class="ri-smartphone-line text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2 mb-1"><span
+                                    class="text-xs font-medium text-gray-600">To: TotalTech Support</span><span
+                                    class="text-xs text-gray-400">+1 (407) 946-2705</span></div>
+                            <p id="smsContent" class="text-sm text-gray-800 leading-relaxed"></p>
+                            <div class="mt-2 text-xs text-gray-400"><i class="ri-check-double-line mr-1"></i>Delivered
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="closeSMSDisplayModal()"
+                    class="w-full mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
